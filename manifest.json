@@ -1,0 +1,49 @@
+{
+   "browser_action": {
+      "default_icon": {
+         "128": "images/128.png",
+         "16": "images/16.png",
+         "32": "images/32.png",
+         "48": "images/48.png"
+      },
+      "default_popup": "koya/tiny_tube.html"
+   },
+   "content_scripts": [ {
+	  "css": [ "v3debloater_210515.css" ],
+      "exclude_matches": [ "*://*.youtube.com/embed/*", "*://studio.youtube.com/*", "*://m.youtube.com/*", "*://consent.youtube.com/*", "*://*.youtube.com/oembed*", "*://*.youtube.com/api/*", "*://*.youtube.com/subscribe_embed*", "*://*.youtube.com/s/*", "*://*.youtube.com/img/*", "*://img.youtube.com/*" ],
+      "js": [ 
+		"ReleaseInstance0.js"
+	  ],
+      "matches": [ "*://*.youtube.com/*" ],
+      "run_at": "document_start",
+	  "all_frames": true
+   }, {
+		"matches": [ "*://*.youtube.com/embed/test*" ],
+		"js": [
+			"ReleaseInstance1.js"
+		],
+		"run_at": "document_start",
+		"all_frames": true
+   }, {
+      "js": [ 
+		"ReleaseInstance2.js"
+	  ],
+      "matches": [ "*://content-youtube.googleapis.com/*" ],
+      "run_at": "document_start",
+	  "all_frames": true
+   }   ],
+   "description": "V3 is the alternative solution to a fast and responsive YouTube frontend which combines performance with beauty, bringing back Google's best web layout. v3core \"v3 core\" v3cores v3cv \"v3 cv\" v3mods \"v3 mod\" \"v3 youtube\" v3tube v3hitchhiker",
+   "icons": {
+      "128": "images/128.png",
+      "16": "images/16.png",
+      "32": "images/32.png",
+      "48": "images/48.png"
+   },
+   "manifest_version": 2,
+   "name": "V3 - TUDO 2 Release Instance",
+   "permissions": [ "activeTab", "webRequest", "webRequestBlocking", "cookies", "storage", "*://*.youtube.com/*", "https://www.youtube.com/*", "https://*.googlevideo.com/*", "https://redirector.googlevideo.com/*", "*://*.googlevideo.com/*", "*://*.content-youtube.googleapis.com/*", "https://www.content-youtube.googleapis.com/*" ],
+   "version_name": "1.0.0.0",
+   "version": "1.0.0",
+   "minimum_chrome_version": "47",
+   "web_accessible_resources": [ "hitchhiker/friend/jquery-3.4.1.min.js", "images/favicon2.png", "New_core/VOR_SERVER/INNERTRES/Request.js", "New_core/VOR_CLIENT/bakend.js", "New_core/VOR_CLIENT/201312/v3friend_client.js", "New_core/VOR_CLIENT/v3_player_loader.js", "images/VEVO/VEVO_COVER.png", "images/VEVO/small_banner.png", "images/VEVO/BIG_BANNER.png", "html5player.js", "html5player-new.js", "html5player_C3.js", "html5_player_template", "hitchhiker/common/searchbox_service.js", "images/www-hitchhiker-vflJNvSK4-MOD.png", "hitchhiker/cssbin/www-home-c4-vflqZnGt6.css", "koya/tiny_tube.html", "koya/tiny_tube.js", "New_core/VOR_SERVER/INNERTRES/friends/common_friends.png" ]
+}

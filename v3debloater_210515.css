@@ -1,0 +1,31 @@
+html[v3] #ghost-cards, html[v3] #home-container-skeleton, html[v3] ytd-app{display:none!important;}
+html[v3] .watch-skeleton, html[v3] #watch-page-skeleton
+{
+	display:none;
+}
+html[v3] #player.skeleton.flexy
+{
+	margin:0!important;
+	padding:0!important;
+	width:640px!important;
+	height:360px!important;
+}
+html[v3] #player.skeleton.flexy #player-wrap, html[v3] #player.skeleton.flexy html[v3] #player-api
+{
+	display:none;
+}
+html[v3] ytd-masthead#masthead.shell.dark.chunked
+{
+	background-color: #202020;
+    box-shadow: inset 0px -2px 0px 0px rgb(0, 0, 0); fill: #fff !important;
+}
+/*#masthead-logo
+{
+    content: url(https://imgur.com/62lCO8O.png) !important;
+    width: 72px !important;
+    height: auto !important;
+}*/
+html[v3] ytd-masthead#masthead.shell.dark.chunked > *
+{
+	visibility:hidden;
+}
