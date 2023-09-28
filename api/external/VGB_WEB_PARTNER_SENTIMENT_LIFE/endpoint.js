@@ -1,0 +1,1 @@
+api.watch.meta={},api.WEB_PARTNER={},api.watch.meta.getAltSentiment=async function(t,e){return(await fetch("https://returnyoutubedislikeapi.com/votes?videoId="+t,{credentials:"omit",cache:"no-cache"})).json()},"/watch"==window.location.pathname&&api.watch.meta.getAltSentiment(window.location.href.split("v=")[1].split("&")[0],0).then((t=>api.watch.meta.AltSentiment=t));
