@@ -4,3 +4,6 @@
 
 <br/><br/>
 пользуйтесь.
+
+# Get Support
+[https://discord.com/invite/7WRjXHMfXJ](https://discord.com/invite/7WRjXHMfXJ)
